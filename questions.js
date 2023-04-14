@@ -1,4 +1,4 @@
-// Var with array and object for questions 
+
 var questions = [
     {
         title: "Commonly used data types DO NOT include:",
@@ -25,20 +25,15 @@ var questions = [
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
-
 ];
-// Declared variables
+// Variables
 var score = 0;
 var questionIndex = 0;
-
-// Start working code 
-// Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-// Seconds left is 15 seconds per question:
 var secondsLeft = 76;
 // Holds interval time
 var holdInterval = 0;
@@ -49,7 +44,6 @@ var ulCreate = document.createElement("ul");
 
 // Triggers timer on button, shows user a display on the screen
 timer.addEventListener("click", function () {
-    // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
             secondsLeft--;
@@ -117,9 +111,8 @@ function compare(event) {
         render(questionIndex);
     }
     questionsDiv.appendChild(createDiv);
-
 }
-// All done will append last page
+
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
@@ -193,7 +186,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
+            // Go to final page
             window.location.replace("./HighScores.html");
         }
     });
