@@ -3,7 +3,7 @@
 
 The deployment link: https://yc937.github.io/YM-bootcamphw4/
 
-Screenshot:
+Screenshot: ./Screenshot.png
 
 This is a quiz website using HTML, CSS, and Javascript. This application emphasizes the use of Javascript to provide quiz questions and collect user data to determine whether the answers to a question are correct, then it generates a score and appends a final page of results from the user data.
 
